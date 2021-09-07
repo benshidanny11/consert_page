@@ -12,12 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/styles/css/main.css" />
-    
   </head>
   <body>
     <main class="main">
-      <header class="row header">
-        <div class="col-7">
+      <header class="header">
+        <div class="col-md-6 col-lg-8 nav-desk">
           <a href="index.html"
             ><img
               src="assets/images/applogo.png"
@@ -26,7 +25,7 @@
               alt=""
           /></a>
         </div>
-        <div class="col-5">
+        <div class="col-md-6 col-lg-4 nav-desk">
           <nav class="nav">
             <a class="links links-active" href="#">Home</a>
             <a class="links" href="#">About</a>
@@ -34,12 +33,16 @@
           </nav>
         </div>
       </header>
+
       <section class="introduction">
+        <div class="menu-icon-container">
+          <img src="./assets/images/menuicon.svg" alt="Menu icon" width="35" height="35">
+        </div>
         <div class="row">
-          <div class="col-sm-6 intro-col">
+          <div class="col-sm-12 col-md-12 col-lg-8 intro-col">
             <h3>"Hello! Salax award is back"</h3>
             <h1 class="mt-3">Salax Awards Series is back now 2021</h1>
-            <div class="card mt-4">
+            <div class="card mt-4 cust-card">
               <div class="card-body">
                 <p>
                   Historical Salax Awards Series in Rwanda Showbiz since August
@@ -56,24 +59,24 @@
         </p>
       </section>
       <section class="progarms row">
-        <div class="col-8">
+        <div class="col-lg-8 col-md-12 col-sm-12">
           <div class="program-inner-container">
             <h3 class="h-agenda">Agenda of day</h3>
+            <div class="divider"></div>
             <div class="program-list p-3">
-              <article
-                class="
-                  agenda-item
+              <div
+                class="agenda-item
                   d-flex
                   flex-md-column
                   justify-content-between
                   align-items-center
                   text-md-center
+                  text-xsm-stae
                   p-3
-                  m-1
-                "
+                  m-1"
               >
-                <div class="row d-sm-flex flex-sm-row">
-                  <div class="col-md-12 col-sm-5 col-xs-5 flex-md-column">
+                <div class="row d-sm-flex  flex-sm-row item-xsm-outer">
+                  <div class="item-xsm flex-md-column">
                     <img
                       class="icon"
                       src="./assets/images/agenda1.svg"
@@ -81,17 +84,17 @@
                       width="70"
                       height="70"
                     />
-                    <h4 class="px-2 mt-3 item-title">Opening speech</h4>
                   </div>
-                  <div class="col-md-12 col-sm-7 col-xs-7 pl-2">
-                    <p>
+                  <div>
+                    <h4 class="px-2 mt-3 item-title">Opening speech</h4>
+                    <p class="p-programs-desc">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Eveniet, dicta?
                     </p>
                   </div>
                 </div>
-              </article>
-              <article
+              </div>
+              <div
                 class="
                   agenda-item
                   flex-md-column
@@ -103,7 +106,7 @@
                 "
               >
                 <div class="row">
-                  <div class="col-md-12 col-sm-5 flex-md-column">
+                  <div class="flex-md-column item-xsm">
                     <img
                       src="./assets/images/agenda2.svg"
                       alt="icon"
@@ -112,15 +115,15 @@
                     />
                     <h4 class="px-2 mt-3 item-title">Presenting artists</h4>
                   </div>
-                  <div class="col-md-12 col-sm-7 pl-2">
-                    <p>
+                  <div class=" pl-2">
+                    <p  class="p-programs-desc">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Dolorem, laboriosam?
                     </p>
                   </div>
                 </div>
-              </article>
-              <article
+              </div>
+              <div
                 class="
                   agenda-item
                   flex-md-column
@@ -132,7 +135,7 @@
                 "
               >
                 <div class="row">
-                  <div class="col-md-12 col-sm-5 flex-md-column">
+                  <div class="flex-md-column item-xsm">
                     <img
                       class="icon"
                       src="./assets/images/agenda3.svg"
@@ -142,15 +145,15 @@
                     />
                     <h4 class="px-2 mt-3 item-title">Party and dancing</h4>
                   </div>
-                  <div class="col-md-12 col-sm-7 pl-2">
-                    <p>
+                  <div class="pl-2">
+                    <p  class="p-programs-desc">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Sed, explicabo?
                     </p>
                   </div>
                 </div>
-              </article>
-              <article
+              </div>
+              <div
                 class="
                   agenda-item
                   d-flex
@@ -163,7 +166,7 @@
                 "
               >
                 <div class="row">
-                  <div class="col-md-12 col-sm-5 flex-md-column">
+                  <div class="flex-md-column item-xsm">
                     <img
                       class="icon"
                       src="./assets/images/agenda4.svg"
@@ -173,14 +176,14 @@
                     />
                     <h4 class="px-2 mt-3 item-title">Award giving</h4>
                   </div>
-                  <div class="col-md-12 col-sm-7 pl-2">
-                    <p>
+                  <div class="pl-2">
+                    <p  class="p-programs-desc"> 
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Repellendus, incidunt.
                     </p>
                   </div>
                 </div>
-              </article>
+              </div>
             </div>
             <a href="#" id="h-more">
               <h3>More agendas</h3>
@@ -189,29 +192,69 @@
         </div>
       </section>
 
-      <section class="nominees my-5 py-2 pb-2" >
-        <div class="text-center mb-4">
+      <section class="nominees my-5 py-2 pb-2">
+        <div class="text-center mb-2">
           <h1 class="nom-title">Nominated artists</h1>
         </div>
         <div class="divider"></div>
         <div class="container">
-          <div class="row mt-4"  id="nominees">
+          <div class="row mt-4" id="nominees"></div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="text-center mb-2 mt-4">
+          <h2 class="title-partner">Partner</h2>
+        </div>
+        <div class="divider"></div>
+        <div class="container mt-5 mb-5">
+          <div class="d-flex justify-content-between">
+            <img
+              class="partner-logo"
+              src="assets/images/partnerskol.png"
+              alt="image partners"
+            />
+            <img
+              class="partner-logo"
+              src="assets/images/partnerbralirwa.png"
+              alt="image partner"
+
+            />
+            <img
+              class="partner-logo"
+              src="assets/images/partner_mtn.png"
+              alt="image partner"
+            />
           </div>
         </div>
       </section>
-      <section class="partner py-3 mt-5 py-5 pb-5">
+      <footer class="mt-5">
         <div class="container">
-          <div class="header text-center mb-4">
-            <h2 class="title">Partner</h2>
-            <div class="small-line pt-3"></div>
-          </div>
-          <div class="d-flex justify-content-around my-5">
-            <img class="p-logo" src="assets/img/spo_1.png" alt="image" />
-            <img class="p-logo" src="assets/img/spo_2.png" alt="image" />
-            <img class="p-logo" src="assets/img/spo_1.png" alt="image" />
+          <div class="row footer-info-container">
+            <div
+              class="
+                col-lg-4 col-md-4 col-sm-4
+                logo
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <img
+                src="./assets/images/applogo.png"
+                alt="image logo"
+                height="150"
+                width="150"
+              />
+            </div>
+            <div class="col-lg-8">
+                <h4 class="footer-title">Salax awards 2021!</h4>
+                <p class="mt-3 pr-5 p-footer">
+                 IKIREZI Group has started SALAX AWARDS in order to give respect and encouragement to the Rwandan Artists and entertainers.
+                </p>
+            </div>
           </div>
         </div>
-      </section>
+      </footer>
     </main>
     <script src="js/main.js"></script>
     <script
