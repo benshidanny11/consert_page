@@ -1,9 +1,14 @@
-
 :root {
   --color-white: #fff;
   --color-main: #ec5242;
   --color-text: #4e4b4be1;
   --color-back: #f8f8f8;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 .introduction {
@@ -18,7 +23,7 @@
 }
 
 .about-title {
-  font-size: 56px;
+  font-size: 42px;
   font-weight: bold;
   color: var(--color-main);
 }
@@ -47,14 +52,8 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-
+@media only screen and (min-width: 768px) {
   .about-title {
-    font-size: 42px;
+    font-size: 56px;
   }
 }
