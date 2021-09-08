@@ -60,4 +60,11 @@ nominatedArtists.forEach((artist) => {
     </div>
   </div>`;
 });
-nomineesHolder.innerHTML = articstContent;
+if (nomineesHolder !== null) {
+  nomineesHolder.innerHTML = articstContent;
+}
+
+document.getElementById('toggle-menu').addEventListener('click', () => {
+  const menuItems = document.getElementById('menu-items');
+  menuItems.classList.remove('show-or-hide');
+});

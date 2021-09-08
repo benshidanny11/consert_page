@@ -27,8 +27,8 @@
         </div>
         <div class="col-md-6 col-lg-4 nav-desk">
           <nav class="nav">
-            <a class="links links-active" href="#">Home</a>
-            <a class="links" href="#">About</a>
+            <a class="links links-active" href="index.html">Home</a>
+            <a class="links" href="about.html">About</a>
             <a class="btn-ticket" href="#">Get ticket</a>
           </nav>
         </div>
@@ -36,17 +36,28 @@
 
       <section class="introduction">
         <div class="menu-icon-container">
-          <img
-            src="./assets/images/menuicon.svg"
-            alt="Menu icon"
-            width="35"
-            height="35"
-          />
+          <a href="#" id="toggle-menu">
+            <img
+              src="./assets/images/menuicon.svg"
+              alt="Menu icon"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+        <div class="menu-container show-or-hide" id="menu-items">
+          <ul class="menu-items">
+            <li><a class="links-menu links-active-menu" href="index.html">Home</a></li>
+            <li><a class="links-menu" href="about.html">About</a></li>
+            <li><a class="links-menu btn-ticket-menu" href="#">Get ticket</a></li>
+          </ul>
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-8 intro-col">
             <h3>"Hello! Salax award is back"</h3>
-            <h1 class="mt-3">Salax Awards Series is back now 2021</h1>
+            <h1 class="mt-3 h-page-title-home">
+              Salax Awards Series is back now 2021
+            </h1>
             <div class="card mt-4 cust-card">
               <div class="card-body">
                 <p>
@@ -63,13 +74,13 @@
           @ Kigali arena, near Remera amahoro stadium
         </p>
       </section>
+
       <section class="progarms row">
         <div class="col-lg-8 col-md-12 col-sm-12">
           <div class="program-inner-container">
             <h3 class="h-agenda">Agenda of day</h3>
             <div class="divider mb-3"></div>
             <div class="program-list">
-
               <div
                 class="
                   agenda-item
@@ -101,93 +112,95 @@
                 </div>
               </div>
               <div
-              class="
-                agenda-item
-                d-flex
-                flex-md-column
-                justify-content-between
-                align-items-center
-                text-md-center
-                m-1
-              "
-            >
-              <div class="row d-sm-flex flex-sm-row item-xsm-outer">
-                <div class="item-xsm flex-md-column">
-                  <img
-                    class="icon"
-                    src="./assets/images/agenda2.svg"
-                    alt="icon"
-                    width="70"
-                    height="70"
-                  />
+                class="
+                  agenda-item
+                  d-flex
+                  flex-md-column
+                  justify-content-between
+                  align-items-center
+                  text-md-center
+                  m-1
+                "
+              >
+                <div class="row d-sm-flex flex-sm-row item-xsm-outer">
+                  <div class="item-xsm flex-md-column">
+                    <img
+                      class="icon"
+                      src="./assets/images/agenda2.svg"
+                      alt="icon"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="info-program-container">
+                    <h4 class="mt-3 item-title">Presenting artists</h4>
+                    <p class="p-programs-desc">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Id, totam!
+                    </p>
+                  </div>
                 </div>
-                <div class="info-program-container">
-                  <h4 class="mt-3 item-title">Presenting artists</h4>
-                  <p class="p-programs-desc">
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, totam!
-                  </p>
+              </div>
+              <div
+                class="
+                  agenda-item
+                  d-flex
+                  flex-md-column
+                  justify-content-between
+                  align-items-center
+                  text-md-center
+                  m-1
+                "
+              >
+                <div class="row d-sm-flex flex-sm-row item-xsm-outer">
+                  <div class="item-xsm flex-md-column">
+                    <img
+                      class="icon"
+                      src="./assets/images/agenda3.svg"
+                      alt="icon"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="info-program-container">
+                    <h4 class="mt-3 item-title">Party and dancing</h4>
+                    <p class="p-programs-desc">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      A, tenetur!
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-            class="
-              agenda-item
-              d-flex
-              flex-md-column
-              justify-content-between
-              align-items-center
-              text-md-center
-              m-1
-            "
-          >
-            <div class="row d-sm-flex flex-sm-row item-xsm-outer">
-              <div class="item-xsm flex-md-column">
-                <img
-                  class="icon"
-                  src="./assets/images/agenda3.svg"
-                  alt="icon"
-                  width="70"
-                  height="70"
-                />
+              <div
+                class="
+                  agenda-item
+                  d-flex
+                  flex-md-column
+                  justify-content-between
+                  align-items-center
+                  text-md-center
+                  m-1
+                "
+              >
+                <div class="row d-sm-flex flex-sm-row item-xsm-outer">
+                  <div class="item-xsm flex-md-column">
+                    <img
+                      class="icon"
+                      src="./assets/images/agenda4.svg"
+                      alt="icon"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+                  <div class="info-program-container">
+                    <h4 class="mt-3 item-title">Awards offering</h4>
+                    <p class="p-programs-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore, animi?
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="info-program-container">
-                <h4 class="mt-3 item-title">Party and dancing</h4>
-                <p class="p-programs-desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, tenetur!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-          class="
-            agenda-item
-            d-flex
-            flex-md-column
-            justify-content-between
-            align-items-center
-            text-md-center
-            m-1
-          "
-        >
-          <div class="row d-sm-flex flex-sm-row item-xsm-outer">
-            <div class="item-xsm flex-md-column">
-              <img
-                class="icon"
-                src="./assets/images/agenda4.svg"
-                alt="icon"
-                width="70"
-                height="70"
-              />
-            </div>
-            <div class="info-program-container">
-              <h4 class="mt-3 item-title">Awards offering</h4>
-              <p class="p-programs-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, animi?
-              </p>
-            </div>
-          </div>
-        </div>
-            
             </div>
             <a href="#" id="h-more">
               <h3>More agendas</h3>
@@ -205,6 +218,7 @@
           <div class="row mt-4" id="nominees"></div>
         </div>
       </section>
+
       <section class="partners">
         <div class="text-center mb-2 mt-4">
           <h2 class="title-partner">Partners</h2>
@@ -230,6 +244,7 @@
           </div>
         </div>
       </section>
+
       <footer class="mt-5">
         <div class="container">
           <div class="row footer-info-container">

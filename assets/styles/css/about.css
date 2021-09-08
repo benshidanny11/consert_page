@@ -1,0 +1,51 @@
+
+:root {
+  --color-white: #fff;
+  --color-main: #ec5242;
+  --color-text: #4e4b4be1;
+  --color-back: #f8f8f8;
+}
+
+.introduction {
+  background-image:
+    url(../../images/img1.png),
+    url(../../images/img2.png),
+    url(../../images/img3.png),
+    url(../../images/img4.png),
+    url(../../images/img5.png);
+  background-position: 85% 8%, 3% 23%, 5% 40%, 98% 52%, 80% 60%;
+  background-size: 50px 50px, 25px 25px, 100px 100px, 30px 30px, 60px 60px;
+}
+
+.about-title {
+  font-size: 56px;
+  font-weight: bold;
+  color: var(--color-main);
+  background-image: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-background-clip: unset;
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cust-card {
+  border: 3px solid rgb(199, 198, 198);
+}
+
+@media only screen and (max-width: 768px) {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  .about-title {
+    font-size: 42px;
+  }
+}

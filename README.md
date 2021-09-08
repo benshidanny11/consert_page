@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Navigate to project folder
 
-- Right click to home.html file and choose open with chrome.
+- Right click to index.html file and choose open with chrome.
 
 ## Authors
 

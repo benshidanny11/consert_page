@@ -33,14 +33,19 @@ body {
   background-repeat: no-repeat;
 }
 
-.intro-col > h1,
+.intro-col > .h-page-title-home,
 .intro-col > h3 {
   color: var(--color-main);
 }
 
-.intro-col > h1 {
+.intro-col > .h-page-title-home {
   font-size: 56px;
   font-weight: bold;
+  background-image: url(../../images/salaxaward.jpeg);
+  text-transform: uppercase;
+  background-clip: content-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .hdate {
@@ -194,7 +199,7 @@ body {
 
 .cust-card {
   background-color: #f7f7f7;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
 }
 
 .menu-icon-container {
@@ -209,6 +214,62 @@ body {
 .image-artist {
   width: 200px;
   height: 200px;
+}
+
+.menu-container {
+  width: 70%;
+  height: 200px;
+  z-index: 2;
+  position: absolute;
+  background-color: var(--color-white);
+  box-shadow: 3px 3px rgba(226, 226, 226, 0.603);
+}
+
+.menu-items {
+  height: 100%;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  padding-inline-start: unset;
+  padding: 1.2rem 0 1.2rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.links-menu {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.links-menu:hover {
+  color: var(--color-main);
+}
+
+.links-active-menu {
+  color: var(--color-main);
+}
+
+.btn-ticket-menu {
+  border: 3px solid var(--color-main);
+  border-radius: 5px;
+  padding: 0.3rem 1.3rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-main);
+  font-weight: 700;
+}
+
+.btn-ticket-menu:hover {
+  color: var(--color-white);
+  background: var(--color-main);
+}
+
+.show-or-hide {
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -230,7 +291,7 @@ body {
     padding: 1.2rem;
   }
 
-  .intro-col > h1 {
+  .intro-col > .h-page-title-home {
     font-size: 42px;
   }
 
@@ -270,6 +331,12 @@ body {
   .image-artist {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    visibility: hidden;
   }
 }
 
