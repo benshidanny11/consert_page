@@ -206,6 +206,11 @@ body {
   height: 70px;
 }
 
+.image-artist {
+  width: 200px;
+  height: 200px;
+}
+
 @media only screen and (max-width: 768px) {
   *,
   ::after,
@@ -226,7 +231,7 @@ body {
   }
 
   .intro-col > h1 {
-    font-size: 36px;
+    font-size: 42px;
   }
 
   .intro-col > h3 {
@@ -261,9 +266,20 @@ body {
     width: 200px;
     height: 40px;
   }
+
+  .image-artist {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 574px) {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
   .partner-logo {
     width: 30%;
     height: 20px;
@@ -282,15 +298,46 @@ body {
 
   .item-xsm {
     display: flex;
+    justify-items: center;
+    align-items: center;
     width: unset;
     flex-wrap: unset;
   }
 
+  .info-program-container {
+    flex-shrink: unset;
+    padding-right: 0;
+  }
+
   .agenda-item {
     text-align: unset;
+    padding: 0.2rem;
   }
 
   .p-programs-desc {
     font-size: unset;
+  }
+
+  .image-artist {
+    width: 100px;
+    height: 100px;
+  }
+
+  .image-artist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-desc {
+    font-size: 14px;
+  }
+
+  .h-type {
+    font-size: 15px;
+  }
+
+  .foooter-texts {
+    text-align: center;
   }
 }
