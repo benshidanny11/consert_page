@@ -35,3 +35,7 @@ To get a local copy up and running follow these simple example steps.
 ## 🤝 Contributors
 
 - [@benshidanny11](https://github.com/benshidanny11)
+
+## Acknowledgments
+
+- [@KDlamin](https://github.com/KDlamini)

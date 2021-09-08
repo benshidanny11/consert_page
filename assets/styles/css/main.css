@@ -12,11 +12,7 @@ body {
 }
 
 .header {
-  height: 20%;
-  box-shadow: 2px 2px 2px 1px rgba(133, 133, 133, 0.2);
-  display: flex;
-  align-items: center;
-  padding-left: 5rem;
+  display: none;
 }
 
 .introduction {
@@ -29,17 +25,18 @@ body {
   background-position: 85% 8%, 3% 23%, 50% 50%, 98% 52%, 80% 60%;
   background-size: 50px 50px, 25px 25px, 100px 100px, 30px 30px, 60px 60px;
   background-color: #f8f8f8;
-  padding: 7rem;
+  padding: 1.2rem;
   background-repeat: no-repeat;
 }
 
 .intro-col > .h-page-title-home,
 .intro-col > h3 {
   color: var(--color-main);
+  margin-top: 1rem;
 }
 
 .intro-col > .h-page-title-home {
-  font-size: 56px;
+  font-size: 42px;
   font-weight: bold;
   background-image: url(../../images/salaxaward.jpeg);
   text-transform: uppercase;
@@ -49,7 +46,7 @@ body {
 }
 
 .hdate {
-  font-size: 34px;
+  font-size: 26px;
   font-weight: bold;
   color: var(--color-text);
 }
@@ -98,6 +95,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  --bs-gutter-x: 0;
 }
 
 .program-inner-container {
@@ -123,12 +122,17 @@ body {
 .program-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .agenda-item {
   background-color: rgba(233, 233, 233, 0.185);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 .agenda-item:hover {
@@ -203,17 +207,17 @@ body {
 }
 
 .menu-icon-container {
-  display: none;
+  display: block;
 }
 
 .partner-logo {
-  width: 300px;
-  height: 70px;
+  width: 200px;
+  height: 40px;
 }
 
 .image-artist {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .menu-container {
@@ -272,7 +276,20 @@ body {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+.icon-programs {
+  width: 70px;
+  height: 70px;
+}
+
+.p-programs-desc {
+  font-size: 12px;
+}
+
+.top-bar {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
   *,
   ::after,
   ::before {
@@ -280,63 +297,89 @@ body {
   }
 
   .header {
-    display: none;
+    height: 20%;
+    box-shadow: 2px 2px 2px 1px rgba(133, 133, 133, 0.2);
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
   }
 
   .menu-icon-container {
-    display: block;
+    display: none;
   }
 
   .introduction {
-    padding: 1.2rem;
+    padding: 7rem;
   }
 
   .intro-col > .h-page-title-home {
-    font-size: 42px;
-  }
-
-  .intro-col > h3 {
-    margin-top: 1rem;
+    font-size: 56px;
   }
 
   .hdate {
-    font-size: 26px;
-  }
-
-  .program-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .agenda-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .progarms {
-    --bs-gutter-x: 0;
-  }
-
-  .p-programs-desc {
-    font-size: 12px;
+    font-size: 34px;
   }
 
   .partner-logo {
-    width: 200px;
-    height: 40px;
+    width: 300px;
+    height: 70px;
   }
 
   .image-artist {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
-}
 
-@media only screen and (min-width: 768px) {
   .menu-container {
     visibility: hidden;
+  }
+
+  .nominees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nominated-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-bar {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    background-color: var(--color-text);
+  }
+
+  .links-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0;
+  }
+
+  .top-links-container {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    padding-inline-start: unset;
+  }
+
+  .top-links {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .top-links:hover {
+    color: rgb(235, 235, 235);
   }
 }
 
@@ -356,9 +399,6 @@ body {
     display: block;
   }
 
-  /* .agenda-item {
-    display: flex;
-    flex-direction: row; */
   .item-xsm-outer {
     flex-wrap: unset;
   }
@@ -372,22 +412,24 @@ body {
   }
 
   .info-program-container {
+    display: flex;
     flex-shrink: unset;
     padding-right: 0;
+    align-items: center;
+  }
+
+  .item-title {
+    font-size: 14px;
+  }
+
+  .p-programs-desc {
+    font-size: 12px;
+    margin-left: 1rem;
   }
 
   .agenda-item {
     text-align: unset;
     padding: 0.2rem;
-  }
-
-  .p-programs-desc {
-    font-size: unset;
-  }
-
-  .image-artist {
-    width: 100px;
-    height: 100px;
   }
 
   .image-artist-container {
@@ -406,5 +448,15 @@ body {
 
   .foooter-texts {
     text-align: center;
+  }
+
+  .icon-programs {
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+  }
+
+  .footer-info-container {
+    display: block;
   }
 }
