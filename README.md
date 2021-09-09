@@ -39,3 +39,4 @@ To get a local copy up and running follow these simple example steps.
 ## Acknowledgments
 
 - [@KDlamin](https://github.com/KDlamini)
+- [@Cindy Shin](https://www.behance.net/adagio07) the author of the [originer design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
