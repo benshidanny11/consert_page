@@ -1,0 +1,59 @@
+:root {
+  --color-white: #fff;
+  --color-main: #ec5242;
+  --color-text: #4e4b4be1;
+  --color-back: #f8f8f8;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.introduction {
+  background-image:
+    url(../../images/img1.png),
+    url(../../images/img2.png),
+    url(../../images/img3.png),
+    url(../../images/img4.png),
+    url(../../images/img5.png);
+  background-position: 85% 8%, 3% 23%, 20% 52%, 98% 52%, 80% 60%;
+  background-size: 50px 50px, 25px 25px, 100px 100px, 30px 30px, 60px 60px;
+}
+
+.about-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--color-main);
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-col-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cust-card {
+  border: 3px solid rgb(199, 198, 198);
+  background-color: var(--color-white);
+}
+
+.inner-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-title {
+    font-size: 56px;
+  }
+}

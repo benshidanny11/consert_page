@@ -4,14 +4,14 @@ const nominatedArtists = [
     type: 'PoP and RNB Artist',
     image: './assets/images/artist1.jpg',
     descr:
-      'This 19-year-old musician broke through the music scene last year, with his single "Ubigenza ute".',
+      'This 19-year-old musician broke through the music scene last year',
   },
   {
     name: 'Alyne sano',
     type: 'Jazz and Blues artist',
     image: './assets/images/artist2.jpeg',
     descr:
-      'Jazz and Blues is a genre that is currently dominated by artist/songwriter, Alyn Sano.',
+      'Jazz and Blues is a genre that is currently dominated by artist',
   },
   {
     name: 'Nel Ngabo',
@@ -25,21 +25,21 @@ const nominatedArtists = [
     type: 'Afrobeat and RNB Artist',
     image: './assets/images/artist4.jpg',
     descr:
-      'The 28-year-old Musician/Song-writer and founder & C.E.O. of his own record label called Igitangaza Music Label.',
+      'The 28-year-old Musician/Song-writer, he is good singer.',
   },
   {
     name: 'Devis D',
     type: 'PoP Hip hop Artist',
     image: './assets/images/artist5.jpeg"',
     descr:
-      'Musical talent with his own twist on style and presence in the Rwandan music scene.',
+      'Musical talent with his own twist on style and presence music scene.',
   },
   {
     name: 'Igol Mabano',
     type: 'Jas and Afrobeat Artist',
     image: './assets/images/artist6.jpeg"',
     descr:
-      'Rising Artist signed under Kina Music Label has released his debut album May 2020',
+      'Rising Artist signed under Kina Music Label has released album ',
   },
 ];
 
@@ -47,7 +47,7 @@ const nomineesHolder = document.getElementById('nominees');
 let articstContent = '';
 
 nominatedArtists.forEach((artist) => {
-  articstContent += `<div class="col-lg-6 col-md-12 d-flex my-2 p-2">
+  articstContent += `<div class="col-12 d-flex my-2 p-2">
     <div class="image-artist-container">
       <img src="${artist.image}" alt="artist image" class="image-artist"/>
     </div>
@@ -60,4 +60,11 @@ nominatedArtists.forEach((artist) => {
     </div>
   </div>`;
 });
-nomineesHolder.innerHTML = articstContent;
+if (nomineesHolder !== null) {
+  nomineesHolder.innerHTML = articstContent;
+}
+
+document.getElementById('toggle-menu').addEventListener('click', () => {
+  const menuItems = document.getElementById('menu-items');
+  menuItems.classList.remove('show-or-hide');
+});
