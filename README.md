@@ -36,6 +36,10 @@ To get a local copy up and running follow these simple example steps.
 
 - [@benshidanny11](https://github.com/benshidanny11)
 
+## 🔐 License
+
+- [LICENSE.md](./LICENSE.md)
+
 ## Acknowledgments
 
 - [@KDlamin](https://github.com/KDlamini)
