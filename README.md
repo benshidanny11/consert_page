@@ -1,6 +1,6 @@
 # Consert page (Salax award)
 
-> This is an online website for buying tickets for salax award event. By using this project user is able to see all secheduled events, all nominated artists, view the agenda of event. Also this system enables user to book or buy a ticket to for their disired events.
+> Salax concert is an online website for buying tickets for the Salax award event. By using this project users can see all scheduled events, all nominated artists, and the agenda of the event.
 
 ## Features
 - Home page
