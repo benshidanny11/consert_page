@@ -13,7 +13,7 @@
 
 ## Live demo
 
-[Click here to visit](https://salax-awards.herokuapp.com/)
+[Click here to visit](https://benshidanny11.github.io/consert_page/)
 
 
 ## Getting Started
