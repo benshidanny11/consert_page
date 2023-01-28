@@ -260,12 +260,6 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-.image-list img {
-  background-image: #272a31;
-  filter: brightness(0.4);
-  filter: contrast(30%);
-}
-
 article h4 {
   border: 3px solid rgb(255, 255, 255);
   background-color: var(--background);

@@ -318,6 +318,8 @@ footer .logo img {
   width: 100%;
   height: 95%;
   color: var(--primary);
+  filter: brightness(0.4);
+  filter: contrast(30%);
 }
 
 .overView .logo {
