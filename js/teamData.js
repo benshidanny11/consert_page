@@ -3,7 +3,7 @@ const data = [
     id: 1,
     name: 'Niyo Bosco',
     images: {
-      img: 'assets/images/artist1.jpg',
+      img: './assets/images/artist1.jpg',
       alt: 'artist 1',
     },
     about: 'PoP and RNB Artist',
@@ -13,7 +13,7 @@ const data = [
     id: 2,
     name: 'Aline Sano',
     images: {
-      img: 'assets/images/artist2.jpeg',
+      img: './assets/images/artist2.jpeg',
       alt: 'Artist 2',
     },
     about: 'Jazz and Blues artist',
@@ -23,7 +23,7 @@ const data = [
     id: 3,
     name: 'Bruce melodie',
     images: {
-      img: 'assets/images/artist3.jpeg',
+      img: './assets/images/artist3.jpeg',
       alt: 'Artist 3',
     },
     about: 'Afrobeat and RNB Artist',
@@ -33,7 +33,7 @@ const data = [
     id: 4,
     name: 'Albert Noah',
     images: {
-      img: 'assets/images/artist4.jpg',
+      img: './assets/images/artist4.jpg',
       alt: 'Artist 4',
     },
     about: 'RNB artist',
@@ -43,7 +43,7 @@ const data = [
     id: 5,
     name: 'Devis D',
     images: {
-      img: 'assets/images/artist5.jpeg',
+      img: './assets/images/artist5.jpeg',
       alt: 'Artist 5',
     },
     about: 'PoP Hip hop Artist',
@@ -53,7 +53,7 @@ const data = [
     id: 6,
     name: 'Igol Mabano',
     images: {
-      img: 'assets/images/artist6.jpeg',
+      img: './assets/images/artist6.jpeg',
       alt: 'Artist 6',
     },
     about: 'Jas and Afrobeat Artist',
